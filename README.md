@@ -29,3 +29,23 @@ O script também pode ser utilizado para verificar dispositivos portáteis, como
 
 - O script captura e ignora erros de acesso para evitar interrupções.
 
+## Explicações das Alterações:
+
+1. Instalação do módulo ImportExcel: Certifique-se de ter o módulo ImportExcel instalado, como mencionado anteriormente.
+   
+2. Salvamento em ```.xlsx:``` Após gerar o relatório em ```.txt```, o script também gera um arquivo Excel no mesmo diretório, usando o comando ```Export-Excel```.
+
+3. Instalar o módulo ```ImportExcel```, caso não tenha:
+   
+   ```
+   Install-Module -Name ImportExcel -Force -Scope CurrentUser
+   ```
+4. Função "Export-Excel":  
+- O comando Export-Excel exporta o conteúdo do array ```$resultTxt``` para um arquivo Excel.
+- A opção ```-AutoSize``` ajusta automaticamente o tamanho das colunas.
+- A opção ```-TableName``` define um nome para a tabela dentro da planilha.
+- A opção ```-WorksheetName``` define o nome da aba da planilha.
+
+## Resultado:
+O relatório será gerado em dois formatos: ```.txt``` e ```.xlsx``` (Excel).
+O formato Excel será mais fácil de ler e manipular, especialmente quando você tiver muitas entradas no relatório.
