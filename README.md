@@ -30,7 +30,7 @@ O script também pode ser utilizado para verificar dispositivos portáteis, como
 - O script captura e ignora erros de acesso para evitar interrupções.
 
 
-## Explicações das Alterações:
+# 🚀 Explicações das Alterações:
 
 1. Identificação do Usuário: O script agora inclui a propriedade ```Usuario```, que contém o proprietário do arquivo ou pasta.
    
