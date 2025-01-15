@@ -29,17 +29,19 @@ O script também pode ser utilizado para verificar dispositivos portáteis, como
 
 - O script captura e ignora erros de acesso para evitar interrupções.
 
+
 ## Explicações das Alterações:
 
-1. Instalação do módulo ImportExcel: Certifique-se de ter o módulo ImportExcel instalado, como mencionado anteriormente.
+1. Identificação do Usuário: O script agora inclui a propriedade ```Usuario```, que contém o proprietário do arquivo ou pasta.
    
-2. Salvamento em ```.xlsx:``` Após gerar o relatório em ```.txt```, o script também gera um arquivo Excel no mesmo diretório, usando o comando ```Export-Excel```.
-
-3. Instalar o módulo ```ImportExcel```, caso não tenha:
+2. Instalar o módulo ```ImportExcel```, caso não tenha:
    
    ```
    Install-Module -Name ImportExcel -Force -Scope CurrentUser
    ```
+3. Salvamento em ```.xlsx:``` Após gerar o relatório em ```.txt```, o script também gera um arquivo Excel no mesmo diretório, usando o comando ```Export-Excel```.
+
+
 4. Função "Export-Excel":  
 - O comando Export-Excel exporta o conteúdo do array ```$resultTxt``` para um arquivo Excel.
 - A opção ```-AutoSize``` ajusta automaticamente o tamanho das colunas.
